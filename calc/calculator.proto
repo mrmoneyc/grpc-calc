@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package calc;
+
+service Calculator {
+  rpc Plus (CalcRequest) returns (CalcReply) {}
+  rpc Sub (CalcRequest) returns (CalcReply) {}
+  rpc Mul (CalcRequest) returns (CalcReply) {}
+  rpc Div (CalcRequest) returns (CalcReply) {}
+}
+
+message CalcRequest {
+  int64 num_x = 1;
+  int64 num_y = 2;
+}
+
+message CalcReply {
+  int64 result = 1;
+}
