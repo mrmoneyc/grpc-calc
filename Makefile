@@ -20,7 +20,7 @@ BUILD_OUT=bin
 SERVER_OUT=$(BUILD_OUT)/calc_server
 CLIENT_OUT=$(BUILD_OUT)/calc_client
 
-PYVENV_NAME=pyvenv
+PYVENV_NAME=.pyenv
 
 .PHONY: all proto proto_go proto_py dep server clean
 
